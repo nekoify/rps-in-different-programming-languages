@@ -1,6 +1,6 @@
 import random
-print("Welcome to Rock Paper Scissors written in Python!")
 
+print("Welcome to Rock Paper Scissors written in Python!")
 
 def rps():
    answer = input("Please select Rock, Paper or Scissors: ").lower()
