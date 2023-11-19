@@ -4,7 +4,9 @@ print("Welcome to Rock Paper Scissors written in Python!")
 
 def rps():
    answer = input("Please select Rock, Paper or Scissors: ").lower()
-   checkAnswer(answer)
+   res = checkAnswer(answer)
+   if res == False:
+       return
    aiAnswer = random.randint(1, 3)
    aiMove = parseAnswer(aiAnswer)
    print(f"Ai has picked {aiMove}")
@@ -14,6 +16,7 @@ def checkAnswer(ans):
     if not (ans == "rock" or ans == "paper" or ans == "scissors"):
         print("Please select a valid option!")
         rps()
+        return False
 
 def parseAnswer(ans):
     if ans == 1:
