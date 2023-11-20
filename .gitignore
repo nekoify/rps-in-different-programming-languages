@@ -1,3 +1,7 @@
 # Javascript
 node_modules
 package-lock.json
+
+# Rust 
+Cargo.lock
+target
